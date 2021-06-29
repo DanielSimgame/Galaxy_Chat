@@ -1,0 +1,188 @@
+JFDML JFormDesigner: "7.0.4.0.360" Java: "11.0.9.1" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.FlowLayout ) {
+			"hgap": 0
+			"vgap": 0
+		} ) {
+			name: "this"
+			"background": new java.awt.Color( 32, 34, 37, 255 )
+			"preferredSize": new java.awt.Dimension( 900, 680 )
+			"alignmentX": 0.0f
+			"alignmentY": 0.0f
+			"minimumSize": new java.awt.Dimension( 900, 680 )
+			"maximumSize": new java.awt.Dimension( 900, 680 )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.FlowLayout ) {
+				"hgap": 0
+				"vgap": 0
+			} ) {
+				name: "panel1"
+				"background": new java.awt.Color( 32, 34, 37, 255 )
+				"alignmentX": 0.0f
+				"alignmentY": 0.0f
+				"autoscrolls": true
+				"font": new java.awt.Font( "Lucida Grande", 0, 16 )
+				"preferredSize": new java.awt.Dimension( 200, 680 )
+				"minimumSize": new java.awt.Dimension( 200, 680 )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.FlowLayout ) {
+					"alignment": 2
+					"hgap": 0
+				} ) {
+					name: "panel2"
+					"background": new java.awt.Color( 32, 34, 37, 255 )
+					"preferredSize": new java.awt.Dimension( 200, 39 )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "refreshButton"
+						"text": "刷新"
+						"background": new java.awt.Color( 47, 49, 54, 255 )
+						"foreground": sfield java.awt.Color darkGray
+						"font": new java.awt.Font( "苹方字体", 0, 14 )
+						"alignmentY": 0.0f
+						"margin": new java.awt.Insets( 0, 0, 0, 0 )
+						"minimumSize": new java.awt.Dimension( 60, 29 )
+						"preferredSize": new java.awt.Dimension( 60, 29 )
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "settingButton"
+						"text": "设置"
+						"background": new java.awt.Color( 47, 49, 54, 255 )
+						"foreground": sfield java.awt.Color darkGray
+						"font": new java.awt.Font( "苹方字体", 0, 14 )
+						"alignmentY": 0.0f
+						"preferredSize": new java.awt.Dimension( 60, 29 )
+						"margin": new java.awt.Insets( 0, 0, 0, 0 )
+						"minimumSize": new java.awt.Dimension( 60, 29 )
+					} )
+				} )
+				add( new FormComponent( "javax.swing.JFormattedTextField" ) {
+					name: "formattedTextField1"
+					"background": new java.awt.Color( 47, 49, 54, 255 )
+					"selectedTextColor": sfield java.awt.Color white
+					"text": "搜索用户"
+					"foreground": sfield java.awt.Color white
+					"alignmentX": 0.0f
+					"alignmentY": 0.0f
+					"minimumSize": new java.awt.Dimension( 11, 35 )
+					"preferredSize": new java.awt.Dimension( 200, 35 )
+					"font": new java.awt.Font( "苹方字体", 0, 16 )
+					"caretColor": sfield java.awt.Color white
+					"border": sfield com.jformdesigner.model.FormObject NULL_VALUE
+				} )
+				add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+					name: "scrollPane1"
+					"focusable": false
+					"background": new java.awt.Color( 32, 34, 37, 255 )
+					"foreground": new java.awt.Color( 32, 34, 37, 255 )
+					"alignmentY": 0.0f
+					"alignmentX": 0.0f
+					"preferredSize": new java.awt.Dimension( 200, 600 )
+					"border": sfield com.jformdesigner.model.FormObject NULL_VALUE
+					add( new FormComponent( "javax.swing.JList" ) {
+						name: "list1"
+						"background": new java.awt.Color( 32, 34, 37, 255 )
+						"foreground": new java.awt.Color( 255, 255, 255, 255 )
+						"preferredSize": new java.awt.Dimension( 35, 600 )
+						"border": sfield com.jformdesigner.model.FormObject NULL_VALUE
+						"model": new javax.swing.DefaultListModel {
+							addElement( "user1" )
+							addElement( "user2" )
+							addElement( "user3" )
+						}
+						"font": new java.awt.Font( "苹方字体", 0, 14 )
+					} )
+				} )
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+				name: "panel3"
+				"alignmentX": 0.0f
+				"alignmentY": 0.0f
+				"preferredSize": new java.awt.Dimension( 700, 680 )
+				"minimumSize": new java.awt.Dimension( 100, 680 )
+				"background": new java.awt.Color( 32, 34, 37, 255 )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label1"
+					"text": "局域网广播"
+					"background": new java.awt.Color( 32, 34, 37, 255 )
+					"foreground": new java.awt.Color( 255, 255, 255, 255 )
+					"font": new java.awt.Font( "苹方字体", 1, 20 )
+					"maximumSize": new java.awt.Dimension( 700, 50 )
+					"minimumSize": new java.awt.Dimension( 100, 50 )
+					"preferredSize": new java.awt.Dimension( 100, 75 )
+					"horizontalTextPosition": 0
+					"alignmentY": 0.0f
+					"horizontalAlignment": 0
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "North"
+				} )
+				add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+					name: "scrollPane2"
+					"alignmentX": 0.0f
+					"alignmentY": 0.0f
+					"preferredSize": new java.awt.Dimension( 700, 550 )
+					"minimumSize": new java.awt.Dimension( 700, 550 )
+					"background": new java.awt.Color( 60, 60, 60, 255 )
+					"foreground": new java.awt.Color( 60, 60, 60, 255 )
+					"border": sfield com.jformdesigner.model.FormObject NULL_VALUE
+					add( new FormComponent( "javax.swing.JTextArea" ) {
+						name: "textArea1"
+						"background": new java.awt.Color( 60, 60, 60, 255 )
+						"selectedTextColor": sfield java.awt.Color white
+						"text": "正在连接服务器..."
+						"foreground": sfield java.awt.Color white
+						"font": new java.awt.Font( "苹方字体", 0, 14 )
+						"preferredSize": new java.awt.Dimension( 700, 17 )
+						"editable": false
+						"lineWrap": true
+					} )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "Center"
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridBagLayout ) {
+					"$columnSpecs": "0:1.0, 0:1.0"
+					"$rowSpecs": "0:1.0"
+					"$alignTop": true
+					"$alignLeft": true
+				} ) {
+					name: "panel4"
+					"background": new java.awt.Color( 50, 50, 50, 255 )
+					"preferredSize": new java.awt.Dimension( 600, 55 )
+					"minimumSize": new java.awt.Dimension( 600, 50 )
+					"border": sfield com.jformdesigner.model.FormObject NULL_VALUE
+					"alignmentY": 10.0f
+					"alignmentX": 5.0f
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "textField1"
+						"minimumSize": new java.awt.Dimension( 690, 50 )
+						"alignmentX": 0.0f
+						"alignmentY": 0.0f
+						"preferredSize": new java.awt.Dimension( 600, 50 )
+						"background": new java.awt.Color( 50, 50, 50, 255 )
+						"foreground": new java.awt.Color( 255, 255, 255, 255 )
+						"font": new java.awt.Font( "苹方字体", 0, 14 )
+						"horizontalAlignment": 2
+						"autoscrolls": false
+						"selectedTextColor": sfield java.awt.Color white
+						"caretColor": sfield java.awt.Color white
+						"border": sfield com.jformdesigner.model.FormObject NULL_VALUE
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "sendButton"
+						"text": "发送"
+						"font": new java.awt.Font( "苹方字体", 0, 12 )
+						addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "sendButtonMouseClicked", true ) )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "sendButtonActionPerformed", true ) )
+					}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+						"gridx": 1
+					} )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "South"
+				} )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 900, 680 )
+		} )
+	}
+}
